@@ -45,7 +45,8 @@
                     type="text" 
                     placeholder="Tu Nombre" 
                     id="nombre"
-                >
+                    autocomplete="off"
+                />
             </div>
             <div class="campo">
                 <label class="campo__label" for="email">E-mail</label>
@@ -54,7 +55,8 @@
                     type="email" 
                     placeholder="Tu E-mail" 
                     id="email"
-                >
+                    autocomplete="off"
+                />
             </div>
             <div class="campo">
                 <label class="campo__label" for="mensaje">Mensaje</label>
@@ -65,7 +67,7 @@
             </div>
 
             <div class="campo">
-                <input type="submit" value="Enviar" class="boton boton--primario">
+                <input type="submit" value="Enviar" class="boton boton--primario" />
             </div>
         </form>
 
@@ -87,6 +89,9 @@
             </div>
         </div>
     </footer>
+    <!-- Aquí se colocan los scripts -->
     <script src="js/modernizr.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </body>
 </html>
