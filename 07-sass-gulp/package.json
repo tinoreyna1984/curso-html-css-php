@@ -1,0 +1,18 @@
+{
+  "name": "07-sass-gulp",
+  "version": "1.0.0",
+  "description": "Ejemplo con SASS y Gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sass",
+    "gulp"
+  ],
+  "author": "Tino Reyna",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.57.1"
+  }
+}
