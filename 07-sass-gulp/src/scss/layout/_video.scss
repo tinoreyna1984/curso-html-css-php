@@ -1,0 +1,57 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+/* VIDEO DE FONDO */
+
+.video {
+  position: relative; /* relativo al body */
+  max-height: 70rem;
+  min-height: 50rem;
+  overflow: hidden; /* oculta el exceso de la dimensión del video */
+
+  .overlay {
+    position: absolute; /* absoluto dentro del div de video */
+    height: 100%;
+    width: 100%;
+    /* gradiente: */
+    background: rgb(165, 3, 255);
+    background: linear-gradient(
+      270deg,
+      rgba(165, 3, 255, 1) 0%,
+      rgba(255, 0, 110, 0.49933476808692223) 100%
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  video {
+    /* el objeto de video */
+    display: block;
+    width: auto;
+
+    @include m.tablet{
+        width: 100%; /* toma todo el ancho de pantalla a partir de tablet */
+    }
+    
+  }
+}
+
+.contenido-video {
+    z-index: 10;
+
+    h2 {
+        color: v.$blanco;
+        font-size: 7rem;
+        margin: 0;
+    }
+
+    p {
+        background-color: v.$rosa;
+        display: inline-block;
+        padding: 1rem 2rem;
+        color: v.$blanco;
+        font-weight: 700;
+        font-size: 2.4rem;
+    }
+}
