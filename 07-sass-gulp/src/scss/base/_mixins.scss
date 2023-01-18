@@ -1,5 +1,7 @@
 @use "variables" as v;
 
+/* Media queries */
+
 @mixin telefono {
     @media (min-width: v.$telefono) {
         @content;
@@ -22,4 +24,18 @@
     @media (min-width: v.$desktopXL) {
         @content;
     }
+}
+
+/* CSS Grid por columnas */
+@mixin grid($cols, $gap) {
+    display: grid;
+    grid-template-columns: repeat($cols, 1fr);
+    gap: $gap;
+}
+
+/* quitar formato de listas */
+@mixin resetear-lista {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }

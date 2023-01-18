@@ -1,17 +1,26 @@
+/* Header */
 @use "base/variables" as v;
 @use "base/mixins" as m;
 
 .header {
   background-color: v.$verde;
+  @include m.tablet {
+    &.fijo {
+      top: 0;
+      left: 0;
+      position: fixed;
+      width: 100%;
+      box-shadow: 0.1rem 0.2rem 0.3rem #666;
+    }
+  }
 
   h1 {
     color: v.$blanco;
     text-align: center;
 
-    @include m.tablet{
+    @include m.tablet {
       margin: 0;
     }
-    
   }
 
   .contenido-header {
@@ -26,7 +35,6 @@
 }
 
 .navegacion-principal {
-
   @include m.tablet {
     display: flex;
     gap: 2rem;

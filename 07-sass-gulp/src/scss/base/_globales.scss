@@ -18,11 +18,20 @@ html {
 body {
   font-family: v.$fuente_principal;
   font-size: 16px; /* font-size base a nivel del documento */
+
+  &.fijar-body{
+    overflow: hidden; /* inmoviliza el body después de amplificar una imagen de la galería */
+  }
+
+  &.body-scroll {
+    padding-top: 8.6rem;
+  }
 }
 
 p {
     font-size: 2rem;
     color: v.$negro;
+    line-height: 1.5;
 }
 
 .contenedor {
@@ -49,4 +58,11 @@ h2 {
 
 h3 {
     font-size: 3rem;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
 }
